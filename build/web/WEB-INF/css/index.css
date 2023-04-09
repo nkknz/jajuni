@@ -1,0 +1,509 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Apr 6, 2023, 5:38:58 PM
+    Author     : Nikoru
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Abhaya Libre', serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #efefef;
+}
+
+/* Header */
+.header-container {
+    background-image: url(images/bg.jpg);
+    position: relative;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.header-container img {
+    opacity: 0.5;
+}
+
+.header-text h1 {
+    color: #F5EDE5;
+    font-weight: 800;
+    font-size: 70px;
+}
+
+.header-text p {
+    margin-bottom: 30px;
+    font-weight: 400;
+    color: #ffefef;
+    font-size: 20px;
+}
+
+.login-button {
+    background-color: #E1C5B0;
+    color: #301212;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #E1C5B0;
+    text-decoration: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #96603A;
+    color: #efefef;
+    border-color: #96603A;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+/* Ani-Co Container */
+.anico-container {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.anico-row {
+    display: flex;
+    align-items: center;
+}
+
+.anico-column {
+    flex-basis: 50%;
+    background-color: #523C33;
+    height: 411px;
+    width: 650px;
+    text-align: center;
+}
+
+.anico-column h3 {
+    color: #E3C6B1;
+    font-weight: 600;
+    font-size: 60px;
+    padding: 15% 0 0 0;
+}
+
+.anico-column p {
+    color: #efefef;
+    font-weight: 300;
+    font-size: 20px;
+    padding: 0 10%;
+    margin-bottom: 30px;
+}
+
+.learn-btn {
+    background-color: #E1C5B0;
+    border-radius: 7px;
+    color: #523C33;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.learn-btn:hover {
+    background-color: #96603A;
+    color: #efefef;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+/*Product Slider*/
+
+
+/* Featured Monthly */
+
+.home-menu {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.menu-2{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #523C33;
+    z-index: -999;
+}
+.menu-2 h3{
+    font-size: 4vw
+}
+.menu-2 h4{
+    font-size: 2vw;
+    color: #E3C6B1;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 20px;
+    justify-content: space-around;
+}
+.featured-col{
+    padding: 5px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.featured-col img{
+    max-width: 600px;
+    width: 100%;
+    height: 100%;
+    opacity: 85%;
+}
+
+.featured-col:hover img{
+    opacity: 30%;
+}
+.featured-layer{
+    background: rgba(226, 0, 0, 0);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.featured-col:hover{
+    background: rgba(172, 134, 90, 0.5);
+}
+.featured-layer h2{
+    width: 90%;
+    font-weight: 600;
+    color:  #F5EDE5;
+    font-size: 3vw;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: 1s;
+    margin-bottom: 3%;
+}
+.featured-layer:hover h2{
+    bottom: 50%;
+    opacity: 1;
+    font-size: 2vw;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: #301212;
+}
+/*      featured-col-CONTENT        */
+.featured-col-content{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transition: 0.5s;
+    text-align: center;
+}
+.featured-col-content h3{
+    width: 100%;
+    font-weight: 400;
+    font-size: 1.5vw;
+    top: 49%;
+    position: absolute;
+    padding-bottom: 5%;
+}
+.featured-col-content p{
+    width: 80%;
+    margin: 0 auto;
+    font-weight: 200;
+    color:  #fff;
+    font-size: 1vw;
+    top: 60%;
+    position: relative;
+}
+.featured-col-content h3:hover{
+    text-transform: uppercase;
+}
+.featured-col-content:hover{
+    opacity: 1;
+    color: #fff;
+    transition: 1s;
+    display: contents;
+}
+
+/* Profile */
+.profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 1200px;
+}
+
+.profile-card {
+    background-color: #F5EDE5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    height: 550px;
+}
+
+.profile-card img {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.profile-card h2 {
+    margin-top: 0;
+}
+
+.profile-card p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+
+
+
+/* Contacts */
+.section-contacts{
+    width: 90%;
+    margin: auto;
+    background-color: #523C33;
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+}
+.contacts-container-index{
+    display: flex;
+    margin: 20px auto 0;
+}
+.contacts-loc-index{
+    width: 80%;
+    margin: 20px;
+    flex: 1;
+}
+.contacts-loc-index .loc-details-index h6,
+h3, p{
+    margin: 10px auto;
+}
+.contacts-loc-index .loc-details-index h6{
+    color: #F5EDE5;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: underline;
+}
+.contacts-right{
+    flex: 1.5;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin-right: 20px;
+}
+.contacts-right iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20px;
+    border: none;
+}
+.main-loc-details-index{
+    width: 100%;
+    text-align: center;
+    background-color:#2D1E0D;
+}
+.main-loc-details-index h2{
+    width: 100%;
+    text-align: center;
+    background-color: #301212;
+    color: #fff;
+    letter-spacing: 1rem;
+    font-size: 3vw;
+    padding: 1%;
+    font-weight: 400;
+}
+.contacts-loc-index .loc-details-index p{
+    text-align: center;
+    color: #efefef;
+    display: block;
+    width: 100%;
+
+}
+.contacts-loc-index .loc-details-index .loc-index{
+    font-size: 20px;
+}
+.contacts-button ul {
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
+.contacts-button .ul-menu{
+    margin-left: 0;
+}
+.contacts-button ul li a{
+    text-decoration: none;
+    color: #F5EDE5;
+}
+
+.contacts-button:hover ul li a{
+    text-decoration: none;
+    color: #301212;
+    transition: 0.5s;
+}
+.contacts-button ul li {
+    --c: #F5EDE5;
+    color: var(--c);
+    font-size: 15px;
+    border: 0.25em solid;
+    border-radius: 0.2em;
+    width: 12em;
+    height: 3em;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: sans-serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 2.5em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 1em;
+}
+.contacts-button ul li{
+    display: inline-block;
+    margin-left: 5%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.contacts-button ul li span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+.contacts-button ul li:hover {
+    color: #301212;
+}
+
+.contacts-button ul li:hover span {
+    transform: translateY(0) scale(2);
+}
+
+.contacts-button ul li span:nth-child(1) {
+    --n: 1;
+}
+.contacts-button ul li span:nth-child(2) {
+    --n: 2;
+}
+
+.contacts-button ul li span:nth-child(3) {
+    --n: 3;
+}
+
+.contacts-button ul li span:nth-child(4) {
+    --n: 4;
+}
+
+
+
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: #C7BBB2;
+}
+
+.footer h4 {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.footer p {
+    margin-bottom: 10px;
+    font-weight: 300;
+    font-size: 13px;
+    color: #523C33;
+}
+
+.icons .bi {
+    color: #301212;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+/* media screen */
+
+@media screen and (max-width: 600px) {
+
+    .anico-row {
+        display: block;
+        margin: auto;
+    }
+    .anico-column {
+        width: 100%;
+    }
+    .anico-column img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .home-menu {
+        width: 90%;
+        margin: auto;
+        display: block;
+    }
+    .menu-2 {
+        margin-bottom: 20px;
+    }
+    .menu-2 h4 {
+        font-size: 30px;
+    }
+    .featured-layer h2 {
+        font-size: 40px;
+    }
+    .featured-layer:hover h2 {
+        font-size: 30px;
+    }
+    .featured-col-content h3 {
+        font-size: 15px;
+    }
+    .featured-col-content p {
+        font-size: 10px;
+    }
+}

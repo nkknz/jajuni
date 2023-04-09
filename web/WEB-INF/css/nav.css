@@ -1,0 +1,41 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Apr 6, 2023, 5:34:58 PM
+    Author     : Nikoru
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Abhaya Libre', serif;
+}
+
+.navbar {
+    box-shadow: 0px 10px 15px #C3AC97;
+    
+}
+
+.container {
+    padding: 5px;
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-brand img {
+    flex-basis: 31%;
+}
+
+.navbar-brand h4 {
+    flex-basis: 31%;
+    margin-left: 10px;
+    margin-top: 5px;
+    font-weight: 200;
+    color: #EFEFEF;
+}
